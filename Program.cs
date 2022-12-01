@@ -143,7 +143,6 @@ public class Program
 
     public static class MoodFactory
     {
-
         public static Mood Make(int points)
         {
 
@@ -269,6 +268,7 @@ public class Program
 
     public class Cram : Food
     {
+        private string multiplier;
         public Cram(int multiplier = 1) : base("Cram", 2)
         {
             base.multiplier = multiplier;
